@@ -21,10 +21,10 @@ def display_word(word, guessed_letters):
 def play_game():
     # Schleife für Schwierigkeitseingabe
     while True:
-        difficulty = input("Geben Sie die Schwierigkeit ein (leicht, mittel, schwer): ").lower()
+        difficulty = input("Geben Sie die Schwierigkeit ein (leicht, mittel oder schwer): ").lower()
         word = get_random_word_by_difficulty(difficulty)
         if word is None:
-            print("Ungültige Eingabe, versuchen Sie es erneut.")
+            print("Ungültige Eingabe, geben Sie eine gültige Schwierigkeit ein.")
         else:
            break
     word = get_random_word_by_difficulty(difficulty)                                                       ## Holt das passende Wort basierend auf dem Schwierigkeitsgrad

@@ -22,13 +22,12 @@ def play_game():
     # Schleife für Schwierigkeitseingabe
     while True:
         difficulty = input("Geben Sie die Schwierigkeit ein (leicht, mittel oder schwer): ").lower()
-        word = get_random_word_by_difficulty(difficulty)
+        word = get_random_word_by_difficulty(difficulty)                                            ## Holt das passende Wort basierend auf dem Schwierigkeitsgrad
         if word is None:
             print("Ungültige Eingabe, geben Sie eine gültige Schwierigkeit ein.")
         else:
            break
-    word = get_random_word_by_difficulty(difficulty)                                                       ## Holt das passende Wort basierend auf dem Schwierigkeitsgrad
-
+                                                         
     guessed_letters = []                                                                            ## Liste aller geratenen Buchstaben
     wrong_guesses = 0                                                                               ## Anzahl fehlerhafter Versuche
     max_wrong_guesses = 6                                                                           ## Maximal erlaubte Fehlversuche

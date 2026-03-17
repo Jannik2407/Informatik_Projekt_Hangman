@@ -1,11 +1,11 @@
 import random       # für zufällige Auswahl von Wörtern
 
 words = [
-    "Hangman",
-    "Python",
-    "Informatik",
-    "Programmieren",
-    "Code"
+    "hangman",
+    "python",
+    "informatik",
+    "programmieren",
+    "code"
 ]
 
 
@@ -24,12 +24,3 @@ def get_random_word_by_difficulty(difficulty):
         return None # Keine Wörter für diese Schwierigkeit gefunden
     
     return random.choice(word_list)
-
-# Schleife für Schwierigkeitseingabe
-while True:
-    difficulty = input("Geben Sie die Schwierigkeit ein (leicht, mittel, schwer): ").lower()
-    word = get_random_word_by_difficulty(difficulty)
-    if word is None:
-        print("Ungültige Eingabe, versuchen Sie es erneut.")
-    else:
-        break

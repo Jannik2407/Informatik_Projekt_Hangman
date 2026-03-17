@@ -42,7 +42,7 @@ def play_game():
             continue
 
         if guess in guessed_letters:                                                                ## Doppelte Eingabe verhindern
-            print(YELLOW + "\nDiesen Buchstaben haben Sie bereits geraten! Veruschen Sie einen anderen." + RESET)
+            print(YELLOW + "\nDiesen Buchstaben haben Sie bereits geraten! Versuchen Sie einen anderen." + RESET)
             continue
 
         guessed_letters.append(guess)                                                               ## Buchstabe wird gespeichert
@@ -63,4 +63,4 @@ def play_game():
 
 
     print(RED + "\n Verloren! 😒" + RESET)
-    print("\n Das Word war:", word)                                                          ## Spiel verloren; Wort anzeigen
+    print("\n Das Wort war:", word)                                                          ## Spiel verloren; Wort anzeigen

@@ -2,7 +2,7 @@ from game_logic import play_game                                                
 
 def main_menu():                                                                                                            ## Endlosschleife für das Hauptmenü
     while True:
-        print("\n---Hangman---")
+        print("\n-----------------Hangman------------------")
         print("Geben Sie '1' ein, um das Spiel zu starten")
         print("Geben Sie '2' ein, um das Spiel zu beenden")
 

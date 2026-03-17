@@ -34,6 +34,10 @@ def play_game():
             print("Bitte einen Buchstaben eingeben!")
             continue
 
+        if guess in guessed_letters:                                                                ## Doppelte Eingabe verhindern
+            print("Diesen Buchstaben hast du bereits geraten!")
+            continue
+
         guessed_letters.append(guess)                                                               ## Buchstabe wird gespeichert
 
         if guess in word:                                                                           ## Richtiger Buchstabe

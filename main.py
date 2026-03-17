@@ -3,8 +3,8 @@ from game_logic import play_game                                                
 def main_menu():                                                                                                            ## Endlosschleife für das Hauptmenü
     while True:
         print("\n---Hangman---")
-        print("1 - Spiel starten")
-        print("2 - Beenden")
+        print("Geben Sie '1' ein, um das Spiel zu starten")
+        print("Geben Sie '2' ein, um das Spiel zu beenden")
 
         choice = input("Auswahl: ")                                                                                         ## Nutzer trifft eine Menüauswahl
 

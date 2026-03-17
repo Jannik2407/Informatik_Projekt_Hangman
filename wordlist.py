@@ -33,6 +33,3 @@ while True:
         print("Ungültige Eingabe, versuchen Sie es erneut.")
     else:
         break
-    
-    
-print (f"Das ausgewählte Wort ist: {word}")

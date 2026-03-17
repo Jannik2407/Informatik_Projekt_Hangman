@@ -1,4 +1,4 @@
-from wordlist import get_word_by_difficulty                                                         ## Importiert Funktion zum Laden eines Wortes basierend auf dem Schwierigkeitsgrad
+from wordlist import get_random_word_by_difficulty                                                  ## Importiert Funktion zum Laden eines Wortes basierend auf dem Schwierigkeitsgrad
 from gallows import display_hangman                                                                 ## Importiert Funktion zum Anzeigen des Galgens
 
 def display_word(word, guessed_letters):
@@ -12,7 +12,7 @@ def display_word(word, guessed_letters):
 
 def play_game():
     difficulty =input("Wählen Sie einen Schwierigkeitsgrad aus (leicht/mittel/schwer):").lower()
-    word = get_word_by_difficulty(difficulty)                                                       ## Holt das passende Wort basierend auf dem Schwierigkeitsgrad
+    word = get_random_word_by_difficulty(difficulty)                                                       ## Holt das passende Wort basierend auf dem Schwierigkeitsgrad
 
     guessed_letters = []                                                                            ## Liste aller geratenen Buchstaben
     wrong_guesses = 0                                                                               ## Anzahl fehlerhafter Versuche

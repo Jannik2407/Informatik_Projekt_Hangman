@@ -38,23 +38,24 @@ def play_game():
         guess = input("\nRaten Sie einen Buchstaben: ").lower()
 
         if len(guess) != 1 or not guess.isalpha():                                                  ## Prüft, ob Eingabe gültig ist
-            print("\nBitte geben Sie einen Buchstaben ein!")
+            print(YELLOW + "\nBitte geben Sie einen Buchstaben ein!" + RESET)
             continue
 
         if guess in guessed_letters:                                                                ## Doppelte Eingabe verhindern
-            print(YELLOW + "\nDiesen Buchstaben haben Sie bereits geraten! Versuchen Sie einen anderen." + RESET)
+            display_hangman(wrong_guesses)                                                          ## Galgen anzeigen
+            print(YELLOW + f"\nDiesen Buchstaben ({guess}) haben Sie bereits geraten! Versuchen Sie einen anderen." + RESET)
             continue
 
         guessed_letters.append(guess)                                                               ## Buchstabe wird gespeichert
 
         if guess in word:                                                                           ## Richtiger Buchstabe
+            display_hangman(wrong_guesses)                                                          ## Galgen anzeigen
             print(GREEN + "\nRichtig!" + RESET)
 
         else:
             wrong_guesses += 1                                                                      ## Falscher Buchstabe
             display_hangman(wrong_guesses)                                                          ## Galgen anzeigen
-            print(RED + "Falsch!" + RESET)
-            print("Dieser Buchstabe ist nicht im Wort.")
+            print(RED + f"Falsch! \nDieser Buchstabe ({guess}) ist nicht im Wort." + RESET)
 
         if all(letter in guessed_letters for letter in word):                                       ## Prüft, ob alle Buchstaben erraten wurden
             print(PURPLE + "\n Gewonnen! 🥳" + RESET)

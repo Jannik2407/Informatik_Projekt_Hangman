@@ -38,11 +38,13 @@ def play_game():
         guess = input("\nRaten Sie einen Buchstaben: ").lower()
 
         if len(guess) != 1 or not guess.isalpha():                                                  ## Prüft, ob Eingabe gültig ist
+            print("Bisher geratene Buchstaben:", " ".join(sorted(guessed_letters)))                 # Liste der bisher geratenen Buchstaben anzeigen 
             print(YELLOW + "\nBitte geben Sie einen Buchstaben ein!" + RESET)
             continue
 
         if guess in guessed_letters:                                                                ## Doppelte Eingabe verhindern
             display_hangman(wrong_guesses)                                                          ## Galgen anzeigen
+            print("Bisher geratene Buchstaben:", " ".join(sorted(guessed_letters)))                 # Liste der bisher geratenen Buchstaben anzeigen 
             print(YELLOW + f"\nDiesen Buchstaben ({guess}) haben Sie bereits geraten! Versuchen Sie einen anderen." + RESET)
             continue
 
@@ -50,11 +52,13 @@ def play_game():
 
         if guess in word:                                                                           ## Richtiger Buchstabe
             display_hangman(wrong_guesses)                                                          ## Galgen anzeigen
+            print("Bisher geratene Buchstaben:", " ".join(sorted(guessed_letters)))                 # Liste der bisher geratenen Buchstaben anzeigen 
             print(GREEN + "\nRichtig!" + RESET)
 
         else:
             wrong_guesses += 1                                                                      ## Falscher Buchstabe
             display_hangman(wrong_guesses)                                                          ## Galgen anzeigen
+            print("Bisher geratene Buchstaben:", " ".join(sorted(guessed_letters)))                 # Liste der bisher geratenen Buchstaben anzeigen                                    
             print(RED + f"Falsch! \nDieser Buchstabe ({guess}) ist nicht im Wort." + RESET)
 
         if all(letter in guessed_letters for letter in word):                                       ## Prüft, ob alle Buchstaben erraten wurden

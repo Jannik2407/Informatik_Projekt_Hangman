@@ -16,6 +16,12 @@ Programmiersprache/-version: Python ??
 Entwicklungsumgebung: Visual Studio Code
 
 
+- Hinweise -
+Das spiel läuft vollsträndig über die Konsole.
+Es sind keine externen Bibliotheken erforderlich.
+Alle Eingaben werden validiert, um Feheler zu vermeiden 
+
+
 - Verwendete Module -
 random -> wird verwendet, um ein zufälliges Wort aus der Wörterliste zu entnehmen.
 

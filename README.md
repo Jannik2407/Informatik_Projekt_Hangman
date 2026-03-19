@@ -30,6 +30,8 @@ die ASCII-Galgen-Darstellung vervollständigt ist.
 ## Verwendete Module 
 - random 
   → Wird verwendet, um ein zufälliges Wort aus der Wortliste auszuwählen.
+- ANSI-Farbcodes  
+  → Werden verwendet, um Buchstaben-Eingaben und Spielergebnisse farblich hervorzuheben.
 
 
 ## Projektstruktur 

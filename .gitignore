@@ -1,0 +1,5 @@
+.DS_Store
+__pycache__/
+*.pyc
+# Ignoriere die .DS_Store-Datei, die von macOS erstellt wird
+# Ignoriere den __pycache__-Ordner, der von Python erstellt wird

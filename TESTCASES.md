@@ -145,3 +145,54 @@ Wort: _ o _ _
 
 Raten Sie einen Buchstaben: 
 ```
+
+---
+
+### Testfall 5: Falscher Buchstabe 
+
+**Input:**
+```text
+a
+```
+
+**Expected Output:**
+```text
+Raten Sie einen Buchstaben: a
+
+           -----
+           |   |
+           O   |
+               |
+               |
+               |
+        =========
+        
+Bisher geratene Buchstaben: a
+Falsch! 
+Dieser Buchstabe (a) ist nicht im Wort.
+
+Wort: _ _ _ _
+
+Raten Sie einen Buchstaben: 
+```
+
+**Actual Output:**
+```text
+Raten Sie einen Buchstaben: a
+
+           -----
+           |   |
+           O   |
+               |
+               |
+               |
+        =========
+        
+Bisher geratene Buchstaben: a
+Falsch! 
+Dieser Buchstabe (a) ist nicht im Wort.
+
+Wort: _ _ _ _
+
+Raten Sie einen Buchstaben: 
+```

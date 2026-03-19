@@ -196,3 +196,37 @@ Wort: _ _ _ _
 
 Raten Sie einen Buchstaben: 
 ```
+
+---
+
+### Testfall 6: Ungültige Buchstaben-Eingabe
+
+**Input:**
+```text
+8
+```
+
+**Expected Output:**
+```text
+Raten Sie einen Buchstaben: 8
+Bisher geratene Buchstaben: 
+
+Bitte geben Sie einen Buchstaben ein!
+
+Wort: _ _ _ _
+
+Raten Sie einen Buchstaben: 
+```
+
+**Actual Output:**
+```text
+Raten Sie einen Buchstaben: 8
+Bisher geratene Buchstaben: 
+
+Bitte geben Sie einen Buchstaben ein!
+
+Wort: _ _ _ _
+
+Raten Sie einen Buchstaben: 
+```
+

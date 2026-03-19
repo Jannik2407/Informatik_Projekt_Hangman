@@ -230,3 +230,87 @@ Wort: _ _ _ _
 Raten Sie einen Buchstaben: 
 ```
 
+---
+
+### Testfall 7: Doppelte Buchstaben-Eingabe
+
+**Input:**
+```text
+i
+i
+```
+
+**Expected Output:**
+```text
+Raten Sie einen Buchstaben: i
+
+           -----
+           |   |
+           O   |
+               |
+               |
+               |
+        =========
+        
+Bisher geratene Buchstaben: i
+Falsch! 
+Dieser Buchstabe (i) ist nicht im Wort.
+
+Wort: _ _ _ _
+
+Raten Sie einen Buchstaben: i
+
+           -----
+           |   |
+           O   |
+               |
+               |
+               |
+        =========
+        
+Bisher geratene Buchstaben: i
+
+Diesen Buchstaben (i) haben Sie bereits geraten! Versuchen Sie einen anderen.
+
+Wort: _ _ _ _
+
+Raten Sie einen Buchstaben: 
+```
+
+**Actual Output:**
+```text
+Raten Sie einen Buchstaben: i
+
+           -----
+           |   |
+           O   |
+               |
+               |
+               |
+        =========
+        
+Bisher geratene Buchstaben: i
+Falsch! 
+Dieser Buchstabe (i) ist nicht im Wort.
+
+Wort: _ _ _ _
+
+Raten Sie einen Buchstaben: i
+
+           -----
+           |   |
+           O   |
+               |
+               |
+               |
+        =========
+        
+Bisher geratene Buchstaben: i
+
+Diesen Buchstaben (i) haben Sie bereits geraten! Versuchen Sie einen anderen.
+
+Wort: _ _ _ _
+
+Raten Sie einen Buchstaben: 
+```
+

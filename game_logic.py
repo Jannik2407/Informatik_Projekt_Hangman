@@ -62,10 +62,10 @@ def play_game():
             print(RED + f"Falsch! \nDieser Buchstabe ({guess}) ist nicht im Wort." + RESET)
 
         if all(letter in guessed_letters for letter in word):                                       ## Prüft, ob alle Buchstaben erraten wurden
-            print(PURPLE + "\n Gewonnen! 🥳" + RESET)
-            print("\n Das Wort war:", word)
+            print(PURPLE + "\nGewonnen! 🥳" + RESET)
+            print("\nDas Wort war:", word)
             return                                                                                  ## Spiel beenden, wenn gewonnen
 
 
-    print(RED + "\n Verloren! 😒" + RESET)
-    print("\n Das Wort war:", word)                                                          ## Spiel verloren; Wort anzeigen
+    print(RED + "\nVerloren! 😒" + RESET)
+    print("\nDas Wort war:", word)                                                          ## Spiel verloren; Wort anzeigen

@@ -46,5 +46,35 @@ Geben Sie '2' ein, um das Spiel zu beenden
 Auswahl: 2
 Programm beendet.
 
+---
+
+### Testfall 3: Ungültige Eingabe
+
+**Input:**
+x
+
+**Expected Output:**
+-----------------Hangman------------------
+Geben Sie '1' ein, um das Spiel zu starten
+Geben Sie '2' ein, um das Spiel zu beenden
+Auswahl: x
+Ungültige Eingabe! Bitte geben Sie '1' um das Spiel zu starten oder '2' um das Spiel zu beenden.
+
+-----------------Hangman------------------
+Geben Sie '1' ein, um das Spiel zu starten
+Geben Sie '2' ein, um das Spiel zu beenden
+Auswahl: 
+
+**Actual Output:**
+-----------------Hangman------------------
+Geben Sie '1' ein, um das Spiel zu starten
+Geben Sie '2' ein, um das Spiel zu beenden
+Auswahl: x
+Ungültige Eingabe! Bitte geben Sie '1' um das Spiel zu starten oder '2' um das Spiel zu beenden.
+
+-----------------Hangman------------------
+Geben Sie '1' ein, um das Spiel zu starten
+Geben Sie '2' ein, um das Spiel zu beenden
+Auswahl: 
 
 

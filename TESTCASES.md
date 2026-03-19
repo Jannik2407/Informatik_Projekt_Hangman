@@ -25,5 +25,26 @@ Geben Sie '2' ein, um das Spiel zu beenden
 Auswahl: 1
 Geben Sie die Schwierigkeit ein (leicht, mittel oder schwer): 
 
+---
+
+### Testfall 2: Programm beenden (Auswahl: '2')
+
+**Input:**
+2
+
+**Expected Output:**
+-----------------Hangman------------------
+Geben Sie '1' ein, um das Spiel zu starten
+Geben Sie '2' ein, um das Spiel zu beenden
+Auswahl: 2
+Programm beendet.
+
+**Actual Output:**
+-----------------Hangman------------------
+Geben Sie '1' ein, um das Spiel zu starten
+Geben Sie '2' ein, um das Spiel zu beenden
+Auswahl: 2
+Programm beendet.
+
 
 

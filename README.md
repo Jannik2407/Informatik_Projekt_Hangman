@@ -11,6 +11,11 @@ Ziel ist es, das Wort zu erraten, bevor die maximale Anzahl an Fehlversuchen err
 die ASCII-Galgen-Darstellung vervollständigt ist.
 
 
+- Teammitglieder -
+Tobias Brechtenbreiter
+Jannik Ast
+
+
 - Verwendete Technologien -
 Programmiersprache/-version: Python ??
 Entwicklungsumgebung: Visual Studio Code
